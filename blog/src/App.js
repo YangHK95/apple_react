@@ -99,7 +99,8 @@ function App() {
             <button
               onClick={() => {
                 let copy = [...글제목];
-                copy[i] = [...(copy[i] - 1)];
+                // copy 여기서 원한는 자료 삭제
+                copy.splice(i, 1);
                 글제목변경(copy);
               }}
             >
@@ -140,7 +141,8 @@ function App() {
         onClick={() => {
           console.log(입력값);
           let copy = [...글제목];
-          copy = [...copy, 입력값];
+          // copy = [...copy, 입력값]; -내 정답
+          copy.unshift(입력값);
           글제목변경(copy);
         }}
       >
