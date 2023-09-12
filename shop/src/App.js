@@ -4,10 +4,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import bg from "./img/domino-164_6wVEHfI-unsplash.jpg";
+import { useState } from "react";
+import 작명 from "./data";
 
 function App() {
+  let [shoes] = useState();
   return (
     <div className="App">
+      {작명}
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">ShoeShop</Navbar.Brand>

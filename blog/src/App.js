@@ -25,6 +25,7 @@ function App() {
       <div className="black-nav">
         <h4>블로그임</h4>
       </div>
+
       <button
         onClick={() => {
           let copy = [...글제목];
